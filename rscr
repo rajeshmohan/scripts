@@ -1,0 +1,3 @@
+settitle $1
+screen -r $1 -d
+

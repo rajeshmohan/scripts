@@ -1,0 +1,3 @@
+echo starting screen for $SCREENNAME
+ssh-agent | head -2 | cut -d\; -f1 | sed s/^/setenv\ / | sed s/=/\ / >$HOME/.ssh/.$SCREENNAME.screen.agent
+#ssh-agent -s |grep -v echo >$HOME/.ssh/.$SCREENNAME.screen.agent.bash

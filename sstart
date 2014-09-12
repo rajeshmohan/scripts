@@ -1,0 +1,4 @@
+export SCREENNAME=$1
+screen-ssh-agent
+sleep 2
+screen -S $SCREENNAME
